@@ -13,7 +13,8 @@ typedef struct nodo{
 
 }Nodo;
 
-Nodo * tablaDeHash[TAM];
+extern Nodo tablaDeHash[TAM];// ESTA DECLARACION TIENE TIENE Q ESTAR ACA, POR QUE?
+
 int hash (int clave);
 void insertar (int clave,const char * nombre);
 void eliminar (int clave);

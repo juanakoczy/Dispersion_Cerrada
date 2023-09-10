@@ -4,15 +4,16 @@
 
 int main() {
 
+
     for (int i = 0; i < TAM ; i++){
-        tablaDeHash[i]->clave = -1;
-        tablaDeHash[i]->nombre[20]  = '\0';
+        tablaDeHash[i].clave = -1;
+        tablaDeHash[i].nombre[0]  = '\0';
     }
 
 
     insertar(5,"juan");
     insertar(5,"marcos");
-    insertar(2,"maria");
+    insertar(7,"maria");
     insertar(3,"luisa");
 
     imprimir();
